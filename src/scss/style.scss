@@ -53,6 +53,10 @@ section {
     .tu {
         height: pxTorem(125px);
         width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
     .nr {
         width: 100%;
