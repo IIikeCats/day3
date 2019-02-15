@@ -1,0 +1,105 @@
+@import "common.scss";
+@import "_minix.scss";
+li {
+    list-style: none;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fcfcfc;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(40px);
+    display: flex;
+    align-items: center;
+    padding: 0 pxTorem(10px);
+    @include sizing;
+    p {
+        width: pxTorem(35px);
+        height: pxTorem(35px);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    ul {
+        flex: 1;
+        overflow-x: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            width: pxTorem(50px);
+        }
+    }
+    div {
+        width: pxTorem(20px);
+        height: pxTorem(20px);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+section {
+    flex: 1;
+    overflow-y: auto;
+    .tu {
+        height: pxTorem(125px);
+        width: 100%;
+    }
+    .nr {
+        width: 100%;
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        dl {
+            height: pxTorem(100px);
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            dd {
+                flex: 1;
+                h2 {
+                    font-size: pxTorem(18px);
+                }
+                p {
+                    color: #9aa8ab;
+                    line-height: pxTorem(40px);
+                }
+            }
+            dt {
+                width: pxTorem(75px);
+                height: pxTorem(60px);
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(45px);
+    display: flex;
+    border-top: 1px solid #ccc;
+    dl {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        dt {
+            width: pxTorem(25px);
+            height: pxTorem(25px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
